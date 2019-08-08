@@ -78,7 +78,7 @@ public class TaiInstantToBigDecimalConverter implements AttributeConverter<TaiIn
 
     if (value != null) {
 
-      long seconds = value.divide(BigDecimal.ONE).longValueExact();
+      long seconds = value.divide(BigDecimal.ONE).longValue();
       long nanos = value.remainder(BigDecimal.ONE).movePointRight(9).longValueExact();
 
       return TaiInstant.ofTaiSeconds(seconds, nanos);

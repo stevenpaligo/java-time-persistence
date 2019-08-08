@@ -42,7 +42,7 @@ public class UtcInstantToStringConverterTests {
   public void test2() {
 
     // simple test of correctness
-    assertEquals("1970-05-03T00:00:00.000456789Z", new UtcInstantToStringConverter().convertToDatabaseColumn(UtcInstant.ofModifiedJulianDay(123, 456789)));
+    assertEquals("1859-03-20T00:00:00.000456789Z", new UtcInstantToStringConverter().convertToDatabaseColumn(UtcInstant.ofModifiedJulianDay(123, 456789)));
   }
 
 
@@ -66,6 +66,6 @@ public class UtcInstantToStringConverterTests {
   public void test4() {
 
     // simple test of correctness
-    assertEquals(UtcInstant.ofModifiedJulianDay(123, 456789), new UtcInstantToStringConverter().convertToEntityAttribute("1970-05-03T00:00:00.000456789Z"));
+    assertEquals(UtcInstant.ofModifiedJulianDay(123, 456789), new UtcInstantToStringConverter().convertToEntityAttribute("1859-03-20T00:00:00.000456789Z"));
   }
 }

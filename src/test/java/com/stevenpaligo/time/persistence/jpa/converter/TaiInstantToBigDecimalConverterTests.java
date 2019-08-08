@@ -87,7 +87,7 @@ public class TaiInstantToBigDecimalConverterTests {
   public void test4() {
 
     // simple test of correctness
-    assertEquals(TaiInstant.ofTaiSeconds(123, 456789), new TaiInstantToBigDecimalConverter().convertToEntityAttribute(BigDecimal.valueOf(123456789000L, 9)));
+    assertEquals(TaiInstant.ofTaiSeconds(123, 456789000), new TaiInstantToBigDecimalConverter().convertToEntityAttribute(BigDecimal.valueOf(123456789000L, 9)));
 
 
     // the instant has only seconds

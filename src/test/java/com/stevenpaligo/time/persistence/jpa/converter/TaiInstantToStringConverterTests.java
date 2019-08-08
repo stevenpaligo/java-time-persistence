@@ -42,7 +42,7 @@ public class TaiInstantToStringConverterTests {
   public void test2() {
 
     // simple test of correctness
-    assertEquals("123.456789s(TAI)", new TaiInstantToStringConverter().convertToDatabaseColumn(TaiInstant.ofTaiSeconds(123, 456789)));
+    assertEquals("123.000456789s(TAI)", new TaiInstantToStringConverter().convertToDatabaseColumn(TaiInstant.ofTaiSeconds(123, 456789)));
   }
 
 
@@ -66,6 +66,6 @@ public class TaiInstantToStringConverterTests {
   public void test4() {
 
     // simple test of correctness
-    assertEquals(TaiInstant.ofTaiSeconds(123, 456789), new TaiInstantToStringConverter().convertToEntityAttribute("123.456789s(TAI)"));
+    assertEquals(TaiInstant.ofTaiSeconds(123, 456789), new TaiInstantToStringConverter().convertToEntityAttribute("123.000456789s(TAI)"));
   }
 }
