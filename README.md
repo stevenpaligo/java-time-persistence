@@ -3,6 +3,7 @@ This project contains utilities for persisting objects from the [ThreeTen-Extra 
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.stevenpaligo/threeten-extra-jpa/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.stevenpaligo/threeten-extra-jpa)
 [![Javadoc](https://javadoc.io/badge/com.stevenpaligo/threeten-extra-jpa.svg)](http://www.javadoc.io/doc/com.stevenpaligo/threeten-extra-jpa)
+[![License](https://img.shields.io/badge/license-Apache%202-green)](https://opensource.org/licenses/Apache-2.0)
 
 
 
